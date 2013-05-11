@@ -52,6 +52,7 @@ Repo organization:
 server_view/
     - see website organization above
     - copied over to server, but not saved in repo
+    - generated from scripts
 scripts/
     - creation scripts (perl/python/whatever)
     - server-side script templates (HTML, CSS, etc)
