@@ -1,12 +1,11 @@
 # Stevo Bailey
 # stevo.bailey@gmail.com
 # 
-# This makefile creates the main pages of the website. It also
-# publishes the site by copying over the server_view/ to the
-# server.
+# This makefile runs the scripts here to generate the website
+# files.
 
 default: all
-base_dir = .
+base_dir = ..
 
 include $(base_dir)/Makefrag
 
@@ -14,21 +13,32 @@ include $(base_dir)/Makefrag
 # Variables
 #########################################################
 
+### directories ###
+temp_dir		 = temp
+
+### scripts ###
+blog_sort_sc     = blog_sort.py
+
+### output files ###
+blog_sort_out    = $(temp_dir)/sorted_blog_list.txt
 
 #########################################################
 # Build Rules
 #########################################################
 
-scripts:
-	cd $(scripts_dir); make
+$(temp_dir):
+	mkdir $@
 
-all: scripts
+$(blog_sort_out): $(temp_dir)
+	$(py_exec) $(blog_sort_sc) $(blog_dir) $(blog_sort_out)
+
+all: $(blog_sort_out)
 
 #########################################################
 # Extra 
 #########################################################
 
-.PHONY: all scripts
+.PHONY: all
 
 clean:
-	cd $(scripts_dir); make clean
+	rm -rf temp	

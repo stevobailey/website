@@ -1,0 +1,14 @@
+# Stevo Bailey
+# stevo.bailey@gmail.com
+# 
+# Contains useful variables relevant to all Makefiles.
+
+### commands ###
+py_exec			 = python
+pl_exec 		 = perl
+
+### directories ###
+content_dir      = $(base_dir)/content
+blog_dir		 = $(content_dir)/blog
+projects_dir     = $(content_dir)/projects
+scripts_dir      = $(base_dir)/scripts
