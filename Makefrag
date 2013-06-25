@@ -11,4 +11,5 @@ pl_exec 		 = perl
 content_dir      = $(base_dir)/content
 blog_dir		 = $(content_dir)/blog
 projects_dir     = $(content_dir)/projects
+pubs_dir         = $(content_dir)/publications
 scripts_dir      = $(base_dir)/scripts

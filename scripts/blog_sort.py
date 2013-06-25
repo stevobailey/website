@@ -3,13 +3,14 @@
 # stevo.bailey@gmail.com
 #
 # This script sorts the files in the blog directory by date,
-# printout out the names of each file in date order for a perl
+# then prints out the names of each file in date order for a perl
 # script to use.
 
 import sys
 import os
 import string
 import datetime
+import re
 
 def main():
 
@@ -28,7 +29,7 @@ def main():
         if not blog_dir.endswith('/'): blog_dir = blog_dir + '/'
         fopen = open(blog_dir + post, 'r')
         for line in fopen.readlines():
-            if "date:" in line:
+            if re.match("^date:", line):
                 dates.append(datetime.datetime.strptime(string.strip(line[5:]), "%B %d, %Y"))
         fopen.close()
 

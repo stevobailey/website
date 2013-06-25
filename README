@@ -1,3 +1,14 @@
+TODO:
+=====================
+- make sure to correctly format blog entry text, like replace quotes with actual quotes (&quot; or &ldquo;/&rdquo;)
+- replace scp with rsync when copying over files (see http://www-inst.eecs.berkeley.edu/setup.html#student_page)
+- can use PHP on instructional server (not login server)
+    - push server_view/ to cory.eecs.berkeley.edu (need a redirect from regular eecs.berkeley.edu then)
+    - make sure to change permissions of all files copied over
+    - end files with .php
+    - access website from inst.eecs.berkeley.edu/~stevo.bailey
+
+
 -----------------------
 Organization and ideas:
 -----------------------
