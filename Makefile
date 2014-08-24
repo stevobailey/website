@@ -1,34 +1,7 @@
-# Stevo Bailey
-# stevo.bailey@gmail.com
-# 
-# This makefile creates the main pages of the website. It also
-# publishes the site by copying over the server_view/ to the
-# server.
+# I tried rsync but I think login server doesn't like it...
 
-default: all
-base_dir = .
+install:
+	ssh stevo.bailey@login.eecs.berkeley.edu "cd ~/public_html/; rm -rf *"
+	scp -r /Users/stevo.bailey/Documents/website/* stevo.bailey@login.eecs.berkeley.edu:~/public_html/
 
-include $(base_dir)/Makefrag
-
-#########################################################
-# Variables
-#########################################################
-
-
-#########################################################
-# Build Rules
-#########################################################
-
-scripts:
-	cd $(scripts_dir); make
-
-all: scripts
-
-#########################################################
-# Extra 
-#########################################################
-
-.PHONY: all scripts
-
-clean:
-	cd $(scripts_dir); make clean
+.PHONY: install

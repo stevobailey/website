@@ -1,0 +1,261 @@
+/***********************************
+            Global Styles
+***********************************/
+
+body
+{
+    background-image:url(../images/bg.png);
+    background-repeat:repeat;
+    font-family:Cambria;
+    font-size:100%;
+}
+
+img
+{
+    display:inline;
+}
+
+a
+{
+    color:rgb(220,120,0);
+}
+
+a:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+}
+
+/***********************************
+        Top Bar Styles
+***********************************/
+
+#top-bar
+{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:70px;
+    background-color:rgba(0,0,102,0.8);
+    z-index:5;
+}
+
+#top-center-container
+{
+    position:relative;
+    width:550px;
+    margin:20px auto 0px;
+}
+
+#logo
+{
+    position:relative;
+    margin-top:5px;
+}
+
+#nav-menu
+{
+    position:relative;
+    float:right;
+    margin-top:12px;
+    padding:0px;
+}
+
+.nav-menu-item
+{
+    position:relative;
+    margin:0px 5px;
+    padding:0px 5px 3px;
+    display:inline;
+}
+
+#nav-menu a
+{
+    text-shadow:1px 1px 0px black;
+    color:White;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#nav-menu a:hover
+{
+    color:#EEEE88;
+    text-decoration:underline;
+}
+
+#top-buffer
+{
+    height:100px;
+}
+
+/***********************************
+      Box Container and Border
+***********************************/
+
+.box-container
+{
+    width:705px;
+    margin:auto;
+    position:relative;
+    z-index:3;
+}
+
+.box-top
+{
+    width:705px;
+    height:95px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-image:url(../images/box_top.png);
+}
+
+.box-bottom
+{
+    width:705px;
+    height:90px;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background-image:url(../images/box_bottom.png);
+}
+
+.box-left
+{
+    width:37px;
+    position:absolute;
+    top:95px;
+    left:0px;
+    background-image:url(../images/box_left.png);
+    background-repeat:repeat-y;
+}
+
+.box-right
+{
+    width:37px;
+    position:absolute;
+    top:95px;
+    right:0px;
+    background-image:url(../images/box_right.png);
+    background-repeat:repeat-y;
+}
+
+.box-content
+{
+    width:591px;
+    position:absolute;
+    top:75px;
+    left:37px;
+    background-color:White;
+    padding:0px 20px;
+}
+
+/***********************************
+          Box Peripherals
+***********************************/
+
+.box-title
+{
+    position:relative;
+    font-size:2.0em;
+    text-align:center;
+    padding-right:20px;
+    top:-15px;
+    color:rgba(0,0,140,1);
+    font-weight:bold;
+    text-shadow:1px 1px 0px white,
+        -1px -1px 0px white,
+        -1px 1px 0px white,
+        1px -1px 0px white;
+}
+
+.pushpin
+{
+    position:absolute;
+    right:10px;
+    top:0px;
+}
+
+.sticky
+{
+    position:absolute;
+    top:50px;
+    right:-170px;
+}
+
+.back-to
+{
+    position:absolute;
+    left:50px;
+    bottom:25px;
+}
+
+.carrot
+{
+    position:absolute;
+    right:25px;
+    bottom:20px;
+    cursor:pointer;
+}
+
+/***********************************
+        Box Content Styles
+***********************************/
+
+.project-image
+{
+    position:relative;
+    padding:8px;
+    border:2px groove #0000FF;
+    float:left;
+    margin-right:10px;
+    width:200px;
+    height:200px;
+}
+
+.about-image
+{
+    position:relative;
+    padding:8px;
+    border:2px groove #0000FF;
+    margin-right:10px;
+    width:570px;
+    height:321px;
+}
+
+.stevo-image
+{
+    position:relative;
+    padding:8px;
+    border:2px groove #0000FF;
+    float:right;
+    margin-left:10px;
+    margin-top:30px;
+    width:210px;
+    height:244px;
+}
+
+.tagline
+{
+    position:relative;
+    top:-15px;
+}
+
+.minor-heading
+{
+    font-size: 2.0em;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.left
+{
+    position:relative;
+    left:-40px;
+}
+
+.no-margin
+{
+    margin:0px;
+}
