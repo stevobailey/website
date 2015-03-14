@@ -18,13 +18,15 @@
         "type": "Electrical Engineering",
         "title": "Raven: A Low-Power Multi-Core Processor",
         "tagline": "Extremely energy-efficient multi-core processor in nanoscale CMOS for media processing in portable devices",
-        "description": "Dynamic voltage and frequency scaling (DVFS) lets microprocessors spend the optimal amount of energy and time to complete a task. While modern processors often boast DVFS capabilities, they can only change the voltage or frequency for the entire chip. If the chip has multiple cores, this means all cores must be on even if only one is actually doing work. The unused cores are wasting energy. Our Raven chip solves this problem by giving each core its own DC-to-DC converter and clock generator. To find out more about the project, see the <a href=\"https://bwrcs.eecs.berkeley.edu/comic/projects/design-of-extremely-energy-efficient-multi-core-processor-in-nanoscale-cmos-for-media-processing-in-portable-devices/\">ComIC website</a>. Image taken from \"Design Techniques for Fully Integrated Switched-Capacitor DC-DC Converters\" by H-P. Le, S. Sanders, and E. Alon.",
+        "description": "Many of the future applications that will drive the need for greater performance are naturally highly parallel and process massive data sets, where individual point results are of less interest than aggregate statistics or behavior. Examples include statistical machine learning, rich human-machine interfaces, and physical modeling for games and virtual worlds. In this project, the goal is to develop new highly parallel many-core architectures that exploit the attributes of these parallel, error-tolerant applications to tolerate variability in current and upcoming technologies at very low supply voltages and hence attain large gains in energy efficiency. An integrated cross-disciplinary research program is proposed–cutting across software, architecture, and circuits. Each core is designed to be a single vector-thread lane, with an independent control processor and a vector-thread execution engine, and hundreds of such lanes will be designed to fit in the area budget. Cores with similar characteristics will be identified through the pre-characterization phase and will be grouped to form clusters. Their delay and performance will be notified to control processor, so that it can perform dynamic scheduling of tasks to cores with a goal of achieving extreme energy efficiency. Additionally, hardware delay and performance monitors will be embedded in logic so that the process variability can be controlled through immediate dynamic reconfiguration. Last, SRAM arrays will be designed using a variety of write-ability, read-ability, and stability assist techniques to enable error-free operation at low supply voltages, and will feature error correction to enable dynamic characterization and reconfiguration of memory. Together, these techniques will allow the entire system to operate at each die’s own optimal energy-efficiency point, even in the face of increasing transistor variability. Image taken from \"Design Techniques for Fully Integrated Switched-Capacitor DC-DC Converters\" by H-P. Le, S. Sanders, and E. Alon.",
         "img_source": "images/project_multicore.png",
         "img_alt": "DC-to-DC multicore",
 		"color": "green",
         "dates": "2012-Now",
 		"featured": "no",
- 		"documents" : [ ],
+ 		"documents" : [ 
+            "http://dx.doi.org/10.1109/TVLSI.2014.2316919|TVLSI Paper on Energy Modeling" 
+        ],
  		"url": "raven"
     },
  	{
@@ -61,7 +63,7 @@
         "type": "Electrical Engineering",
         "title": "Soft Errors in Datapaths",
         "tagline": "Understanding and protecting against single event transients in microprocessors",
-        "description": "Modern power-constrained microprocessors reduce the operating voltage as much as possible to save energy.  However, nanoscale devices operating at low voltages are vulnerable to soft errors caused by background radiation.  Single event transients result in a voltage pulse at a particular node, which can propagate through logic and, in the worst case, cause an undetectable error in operation.  To guard against this possibility, operating voltages are increased by some additional margin.  This project will explore appropriate models and circuit techniques to guard against soft errors in logic while reducing or eliminating this margin, allowing for reduced operating power.",
+        "description": "Modern power-constrained microprocessors reduce the operating voltage as much as possible to save energy.  However, nanoscale devices operating at low voltages are vulnerable to soft errors caused by background radiation.  Single event transients result in a voltage pulse at a particular node, which can propagate through logic and, in the worst case, cause an undetectable error in operation.  To guard against this possibility, operating voltages are increased by some additional margin.  This project explored appropriate models and circuit techniques to guard against soft errors in logic while reducing or eliminating this margin, allowing for reduced operating power.",
         "img_source": "images/project_upset.png",
         "img_alt": "Radiation striking a circuit node",
 		"color": "green",
@@ -85,7 +87,13 @@
 		"color": "blue",
         "dates": "2013-Now",
         "featured": "no",
-	 	"documents" : [ ],
+	 	"documents" : [
+ 			"documents/learn_proposal.pdf|Project Proposal",
+            "documents/learn_midterm.pdf|Midterm Report",
+            "documents/learn_final.pdf|Final Report",
+            "documents/learn_presentation.pdf|Project Presentation",
+            "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf|MS Thesis"
+        ],
  		"url": "learn"
     },
     {
@@ -97,7 +105,7 @@
         "img_alt": "Combined LDPC and turbo block diagram",
 		"color": "yellow",
         "dates": "2014",
-        "featured": "yes",
+        "featured": "no",
 	 	"documents" : [ 
             "documents/slate_proposal.pdf|Project Proposal",
             "documents/slate_final.pdf|Final Report",
@@ -120,5 +128,18 @@
             "documents/exofields_presentation.pdf|Project Presentation" 
         ],
  		"url": "exofields"
+    },
+    {
+        "type": "Electrical Engineering",
+        "title": "Splash: A Low-Power ASIC Spectrometer",
+        "tagline": "Single planetary low-power ASIC spectrometer with high resolution",
+        "description": "SPLASH is a low power, broad bandwidth, digital spectrometer for atmospheric composition measurements. The first design effort at UC Berkeley developed a combined 1.5 GHz bandwidth ADC frontend and a DSP backend, called SPLASH. The new spectrometer will feature a new high-bandwidth ADC designed by Rachel Hochman. Two copies of the ADC will digitize the I and Q bands separately, operating at a combined bandwith of 20 GHz. The SPLASH DSP backend was extended to accommodate the higher bandwidth and increased number of channels. This backend features a polyphase FIR filter, FFT, and frequency calibration scheme. The DSP backend was written Chisel, a Berkeley hardware construction language. Using Chisel allowed me to create a flexible DSP generator which supports any amount of breadth (parallelism), depth (channels), and performance (pipelining). It also handles a variety of bitwidth specifications, and it allows the choice of single-ported or dual-ported memories.",
+        "img_source": "images/project_splash.png",
+        "img_alt": "Top-level block diagram of digital backend",
+		"color": "red",
+        "dates": "2014-Now",
+        "featured": "yes",
+	 	"documents" : [ ],
+ 		"url": "splash"
     }
 ]

@@ -31,5 +31,19 @@
         "link": "http://dx.doi.org/10.1109/TVLSI.2014.2316919",
         "awards": "",
         "type": "journal"
+    },
+	{
+        "authors": [
+            "Stevo Bailey",
+            "Bora Nikolic"
+        ],
+        "title": "Modeling Radiation-Induced Soft Errors in Logic and the Overhead of Resiliency Techniques",
+        "source": "EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-233",
+        "month": "Dec",
+        "year": 2014,
+        "pages": "",
+        "link": "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf",
+        "awards": "",
+        "type": "thesis"
     }
 ]
