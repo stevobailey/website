@@ -1,145 +1,174 @@
 [
-	{
-        "type": "Electrical Engineering",
-        "title": "A Resilient, Redundant, Superset Adder",
-        "tagline": "Low-power, high-speed, reliable addition using unreliable components",
-        "description": "The superset adder subsumes all traditional radix-2 FO2 parallel prefix adders into one redundant design. This redundancy, combined with full controllability, enables the adder to reconfigure itself around nodes which are faulty, slow, or leaky. An extra row of prefix calculations appended to the adder allows the processor to detect errors during operation. The new design takes advantage of its controllability to reduce design margins, correct for errors, and maintain a competitive area overhead for its features.",
-        "img_source": "images/project_superset.png",
-        "img_alt": "Superset Adder Diagram",
-		"color": "aqua",
-        "dates": "2011-2012",
-		"featured": "no",
-        "documents": [
- 			"http://dx.doi.org/10.1109/ISCAS.2012.6271457|A new taxonomy for reconfigurable prefix adders"
-        ],
- 		"url": "superset"
-    },
- 	{
-        "type": "Electrical Engineering",
-        "title": "Raven: A Low-Power Multi-Core Processor",
-        "tagline": "Extremely energy-efficient multi-core processor in nanoscale CMOS for media processing in portable devices",
-        "description": "Many of the future applications that will drive the need for greater performance are naturally highly parallel and process massive data sets, where individual point results are of less interest than aggregate statistics or behavior. Examples include statistical machine learning, rich human-machine interfaces, and physical modeling for games and virtual worlds. In this project, the goal is to develop new highly parallel many-core architectures that exploit the attributes of these parallel, error-tolerant applications to tolerate variability in current and upcoming technologies at very low supply voltages and hence attain large gains in energy efficiency. An integrated cross-disciplinary research program is proposed–cutting across software, architecture, and circuits. Each core is designed to be a single vector-thread lane, with an independent control processor and a vector-thread execution engine, and hundreds of such lanes will be designed to fit in the area budget. Cores with similar characteristics will be identified through the pre-characterization phase and will be grouped to form clusters. Their delay and performance will be notified to control processor, so that it can perform dynamic scheduling of tasks to cores with a goal of achieving extreme energy efficiency. Additionally, hardware delay and performance monitors will be embedded in logic so that the process variability can be controlled through immediate dynamic reconfiguration. Last, SRAM arrays will be designed using a variety of write-ability, read-ability, and stability assist techniques to enable error-free operation at low supply voltages, and will feature error correction to enable dynamic characterization and reconfiguration of memory. Together, these techniques will allow the entire system to operate at each die’s own optimal energy-efficiency point, even in the face of increasing transistor variability. Image taken from \"Design Techniques for Fully Integrated Switched-Capacitor DC-DC Converters\" by H-P. Le, S. Sanders, and E. Alon.",
-        "img_source": "images/project_multicore.png",
-        "img_alt": "DC-to-DC multicore",
-		"color": "green",
-        "dates": "2012-Now",
-		"featured": "no",
- 		"documents" : [ 
-            "http://dx.doi.org/10.1109/TVLSI.2014.2316919|TVLSI Paper on Energy Modeling" 
-        ],
- 		"url": "raven"
-    },
- 	{
-        "type": "Electrical Engineering",
-        "title": "A Moisture Sensing ASIC",
-        "tagline": "Mixed-signal moisture sensor data processor to reduce wasted crop irrigation water",
-        "description": "Without knowing how much water is in their soil, farmers tend to use timed irrigation, which often uses more water than necessary. According to <a href=\"http://buildgreen.ufl.edu/Fact_sheet_Soil_Moisture_Sensors.pdf\">research</a>, measuring the moisture of farming soil can reduce the amount of water used by up to 88%. This project focused on designing the signal processing path for a capacitive moisture sensor for farming. The design uses a idealized capacitive bridge to differentially measure the water content. It processes these data by mixing the differential output and comparing it to a reference output. Finally, it uses an analog-to-digital converter to digitize the data and prepare it for transmission. The project was part of the Mixed-Signal Integrated Circuits design class at the University of Virginia, taught by Professor Travis Blalock.",
-        "img_source": "images/project_mic.png",
-        "img_alt": "Mixer output",
-		"color": "aqua",
-        "dates": "2011",
-		"featured": "no",
- 		"documents" : [
- 			"documents/micreport.pdf|Final Project Report"
-        ],
- 		"url": "moisture"
-	},
-	{
-        "type": "Electrical Engineering",
-        "title": "A Smoothed Local Percent Filter",
-        "tagline": "Image processing with a smoothed local histogram percent filter in hardware",
-        "description": "A local histogram filter uses the information about the neighborhood around individual pixels to process an image. By constructing a smooth, isotropic, centrally-weighted histogram for each pixel, these filters have an advantage over pre-existing histogram filters. In addition to better-looking percent filters (e.g. the median filter, erosion, dilation, etc.), such histogram filters allow new mode-based filters as well. This project focused on smoothed local percent filters. This design’s throughput was independent of neighborhood size, and a frame rate of 30 fps was easily reached with a 320x200 pixel image. The SRAMs used to buffer intermediate calculations grossly dominated the design’s metrics, but further design exploration could reduce or eliminate this hinderance. The project was part of the VLSI Systems Design class at the University of California, Berkeley, taught by Professors John Wawrzynek, Krste Asanovic, Jonathan Bachrach, and Dr. John Lazzaro.",
-        "img_source": "images/project_filter.png",
-        "img_alt": "Smoothed local histogram integral",
-		"color": "aqua",
-        "dates": "2012",
-		"featured": "no",
- 		"documents" : [
- 		    "documents/filter_report.pdf|Final Project Report"
-        ],
- 		"url": "percentfilter"
-    },
- 	{
-        "type": "Electrical Engineering",
-        "title": "Soft Errors in Datapaths",
-        "tagline": "Understanding and protecting against single event transients in microprocessors",
-        "description": "Modern power-constrained microprocessors reduce the operating voltage as much as possible to save energy.  However, nanoscale devices operating at low voltages are vulnerable to soft errors caused by background radiation.  Single event transients result in a voltage pulse at a particular node, which can propagate through logic and, in the worst case, cause an undetectable error in operation.  To guard against this possibility, operating voltages are increased by some additional margin.  This project explored appropriate models and circuit techniques to guard against soft errors in logic while reducing or eliminating this margin, allowing for reduced operating power.",
-        "img_source": "images/project_upset.png",
-        "img_alt": "Radiation striking a circuit node",
-		"color": "green",
-        "dates": "2013",
-        "featured": "no",
-	 	"documents" : [
- 			"documents/upset_proposal.pdf|Project Proposal",
-            "documents/upset_midterm.pdf|Midterm Report",
-            "documents/upset_final.pdf|Final Report",
-            "documents/upset_presentation.pdf|Project Presentation"
-         ],
- 		"url": "upset"
-    },
-    {
-        "type": "Electrical Engineering",
-        "title": "Learn: Logic Energy and Resiliency",
-        "tagline": "Exploring the tradeoffs between resiliency techniques and their energy overhead",
-        "description": "Energy conservation has arisen as the dominant focus of circuit and processor design, especially as designs become bigger and more complex. Resiliency is a metric of growing concern as chips scale, and is important for specific applications, like space-based circuits. Prior research investigates the tradeoffs between energy and resiliency from different levels of hierarchy. Our project investigates scaling these FIT rate and energy tradeoff calculations to large microprocessor and circuit designs. We seek to limit overdesign and consume only enough energy as is needed to achieve the target FIT rate. We will produce a scalable design metric model that allows quick FIT and energy tradeoffs to be evaluated for any size processor or circuit.",
-        "img_source": "images/project_learn.png",
-        "img_alt": "Energy vs. FIT as gates are upsized",
-		"color": "blue",
-        "dates": "2013-Now",
-        "featured": "no",
-	 	"documents" : [
- 			"documents/learn_proposal.pdf|Project Proposal",
-            "documents/learn_midterm.pdf|Midterm Report",
-            "documents/learn_final.pdf|Final Report",
-            "documents/learn_presentation.pdf|Project Presentation",
-            "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf|MS Thesis"
-        ],
- 		"url": "learn"
-    },
-    {
-        "type": "Electrical Engineering",
-        "title": "Slate is an LDPC and Turbo Engine",
-        "tagline": "A combined LDPC and turbo decoder ASIC written in Chisel",
-        "description": "LDPC and turbo codes are channel codes commonly used for wireless communication. Decoding algorithms are computationally demanding, and so efficient implementations are often inflexible, targeting only the codes specified by a given standard. When support for multiple standards is needed, multiple decoders are generally used. We study the algorithms for decoding each standard and find that some functional units can be shared between both types of decoders. This work presents a design for a combined architecture decoder that supports the codes defined in the 802.11ac and LTE standards. We present some preliminary performance results and show that the majority of the area is consumed by LDPC-specific components. We conclude that this combined architecture allows a turbo decoder to be added to an LDPC decoder with little overhead.",
-        "img_source": "images/project_slate.png",
-        "img_alt": "Combined LDPC and turbo block diagram",
-		"color": "yellow",
-        "dates": "2014",
-        "featured": "no",
-	 	"documents" : [ 
-            "documents/slate_proposal.pdf|Project Proposal",
-            "documents/slate_final.pdf|Final Report",
-            "documents/slate_presentation.pdf|Project Presentation" 
-        ],
- 		"url": "slate"
-    },
-    {
-        "type": "Astronomy",
-        "title": "Detecting Exoplanet Magnetic Fields",
-        "tagline": "Using coronal mass ejections and a lunar telescope to detect exoplanet magnetic field radio signatures",
-        "description": "Planetary magnetic fields shield life from harmful radiation, but current terrestrial exoplanet magnetic field strength estimates predict signals too weak and too low frequency to detect. However, timely coronal mass ejections may boost signal strengths enough, and a radio telescope array placed on the Moon could detect the low frequencies emitted. Once built, this telescope should monitor exoplanets Gliese876 d, 55Cnc e, and GJ1214 b.",
-        "img_source": "images/project_exofields.png",
-        "img_alt": "Estimated exoplanet magnetic field signature strengths and radio telescope sensitivities",
-		"color": "purple",
-        "dates": "2014",
-        "featured": "no",
-	 	"documents" : [ 
-            "documents/exofields_report.pdf|Project Report",
-            "documents/exofields_presentation.pdf|Project Presentation" 
-        ],
- 		"url": "exofields"
-    },
-    {
-        "type": "Electrical Engineering",
-        "title": "Splash: A Low-Power ASIC Spectrometer",
-        "tagline": "Single planetary low-power ASIC spectrometer with high resolution",
-        "description": "SPLASH is a low power, broad bandwidth, digital spectrometer for atmospheric composition measurements. The first design effort at UC Berkeley developed a combined 1.5 GHz bandwidth ADC frontend and a DSP backend, called SPLASH. The new spectrometer will feature a new high-bandwidth ADC designed by Rachel Hochman. Two copies of the ADC will digitize the I and Q bands separately, operating at a combined bandwith of 20 GHz. The SPLASH DSP backend was extended to accommodate the higher bandwidth and increased number of channels. This backend features a polyphase FIR filter, FFT, and frequency calibration scheme. The DSP backend was written Chisel, a Berkeley hardware construction language. Using Chisel allowed me to create a flexible DSP generator which supports any amount of breadth (parallelism), depth (channels), and performance (pipelining). It also handles a variety of bitwidth specifications, and it allows the choice of single-ported or dual-ported memories.",
-        "img_source": "images/project_splash.png",
-        "img_alt": "Top-level block diagram of digital backend",
-		"color": "red",
-        "dates": "2014-Now",
-        "featured": "yes",
-	 	"documents" : [ ],
- 		"url": "splash"
-    }
+  {
+    "type": "Electrical Engineering",
+    "title": "Hurricane: A spatial computing fabric",
+    "tagline": "Leveraging RISC-V to simplify manycore processors",
+    "description": "Coming soon!",
+    "img_source": "images/project_new.png",
+    "img_alt": "New project",
+    "color": "aqua",
+    "dates": "2014-Now",
+    "featured": "no",
+    "documents": [ ],
+    "url": "hurricane"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "A Resilient, Redundant, Superset Adder",
+    "tagline": "Low-power, high-speed, reliable addition using unreliable components",
+    "description": "The superset adder subsumes all traditional radix-2 FO2 parallel prefix adders into one redundant design. This redundancy, combined with full controllability, enables the adder to reconfigure itself around nodes which are faulty, slow, or leaky. An extra row of prefix calculations appended to the adder allows the processor to detect errors during operation. The new design takes advantage of its controllability to reduce design margins, correct for errors, and maintain a competitive area overhead for its features.",
+    "img_source": "images/project_superset.png",
+    "img_alt": "Superset Adder Diagram",
+    "color": "aqua",
+    "dates": "2011-2012",
+    "featured": "no",
+    "documents": [
+      "http://dx.doi.org/10.1109/ISCAS.2012.6271457|A new taxonomy for reconfigurable prefix adders"
+    ],
+    "url": "superset"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Raven: A Low-Power Multi-Core Processor",
+    "tagline": "Extremely energy-efficient multi-core processor in nanoscale CMOS for media processing in portable devices",
+    "description": "Many of the future applications that will drive the need for greater performance are naturally highly parallel and process massive data sets, where individual point results are of less interest than aggregate statistics or behavior. Examples include statistical machine learning, rich human-machine interfaces, and physical modeling for games and virtual worlds. In this project, the goal is to develop new highly parallel many-core architectures that exploit the attributes of these parallel, error-tolerant applications to tolerate variability in current and upcoming technologies at very low supply voltages and hence attain large gains in energy efficiency. An integrated cross-disciplinary research program is proposed–cutting across software, architecture, and circuits. Each core is designed to be a single vector-thread lane, with an independent control processor and a vector-thread execution engine, and hundreds of such lanes will be designed to fit in the area budget. Cores with similar characteristics will be identified through the pre-characterization phase and will be grouped to form clusters. Their delay and performance will be notified to control processor, so that it can perform dynamic scheduling of tasks to cores with a goal of achieving extreme energy efficiency. Additionally, hardware delay and performance monitors will be embedded in logic so that the process variability can be controlled through immediate dynamic reconfiguration. Last, SRAM arrays will be designed using a variety of write-ability, read-ability, and stability assist techniques to enable error-free operation at low supply voltages, and will feature error correction to enable dynamic characterization and reconfiguration of memory. Together, these techniques will allow the entire system to operate at each die’s own optimal energy-efficiency point, even in the face of increasing transistor variability. Image taken from \"Design Techniques for Fully Integrated Switched-Capacitor DC-DC Converters\" by H-P. Le, S. Sanders, and E. Alon.",
+    "img_source": "images/project_multicore.png",
+    "img_alt": "DC-to-DC multicore",
+    "color": "green",
+    "dates": "2012-2015",
+    "featured": "no",
+    "documents" : [ 
+      "http://dx.doi.org/10.1109/TVLSI.2014.2316919|TVLSI Paper on Energy Modeling" 
+    ],
+    "url": "raven"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "A Moisture Sensing ASIC",
+    "tagline": "Mixed-signal moisture sensor data processor to reduce wasted crop irrigation water",
+    "description": "Without knowing how much water is in their soil, farmers tend to use timed irrigation, which often uses more water than necessary. According to <a href=\"http://buildgreen.ufl.edu/Fact_sheet_Soil_Moisture_Sensors.pdf\">research</a>, measuring the moisture of farming soil can reduce the amount of water used by up to 88%. This project focused on designing the signal processing path for a capacitive moisture sensor for farming. The design uses a idealized capacitive bridge to differentially measure the water content. It processes these data by mixing the differential output and comparing it to a reference output. Finally, it uses an analog-to-digital converter to digitize the data and prepare it for transmission. The project was part of the Mixed-Signal Integrated Circuits design class at the University of Virginia, taught by Professor Travis Blalock.",
+    "img_source": "images/project_mic.png",
+    "img_alt": "Mixer output",
+    "color": "aqua",
+    "dates": "2011",
+    "featured": "no",
+    "documents" : [
+      "documents/micreport.pdf|Final Project Report"
+    ],
+    "url": "moisture"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "A Smoothed Local Percent Filter",
+    "tagline": "Image processing with a smoothed local histogram percent filter in hardware",
+    "description": "A local histogram filter uses the information about the neighborhood around individual pixels to process an image. By constructing a smooth, isotropic, centrally-weighted histogram for each pixel, these filters have an advantage over pre-existing histogram filters. In addition to better-looking percent filters (e.g. the median filter, erosion, dilation, etc.), such histogram filters allow new mode-based filters as well. This project focused on smoothed local percent filters. This design’s throughput was independent of neighborhood size, and a frame rate of 30 fps was easily reached with a 320x200 pixel image. The SRAMs used to buffer intermediate calculations grossly dominated the design’s metrics, but further design exploration could reduce or eliminate this hinderance. The project was part of the VLSI Systems Design class at the University of California, Berkeley, taught by Professors John Wawrzynek, Krste Asanovic, Jonathan Bachrach, and Dr. John Lazzaro.",
+    "img_source": "images/project_filter.png",
+    "img_alt": "Smoothed local histogram integral",
+    "color": "aqua",
+    "dates": "2012",
+    "featured": "no",
+    "documents" : [
+      "documents/filter_report.pdf|Final Project Report"
+    ],
+    "url": "percentfilter"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Soft Errors in Datapaths",
+    "tagline": "Understanding and protecting against single event transients in microprocessors",
+    "description": "Modern power-constrained microprocessors reduce the operating voltage as much as possible to save energy.  However, nanoscale devices operating at low voltages are vulnerable to soft errors caused by background radiation.  Single event transients result in a voltage pulse at a particular node, which can propagate through logic and, in the worst case, cause an undetectable error in operation.  To guard against this possibility, operating voltages are increased by some additional margin.  This project explored appropriate models and circuit techniques to guard against soft errors in logic while reducing or eliminating this margin, allowing for reduced operating power.",
+    "img_source": "images/project_upset.png",
+    "img_alt": "Radiation striking a circuit node",
+    "color": "green",
+    "dates": "2013",
+    "featured": "no",
+    "documents" : [
+      "documents/upset_proposal.pdf|Project Proposal",
+      "documents/upset_midterm.pdf|Midterm Report",
+      "documents/upset_final.pdf|Final Report",
+      "documents/upset_presentation.pdf|Project Presentation"
+    ],
+    "url": "upset"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Learn: Logic Energy and Resiliency",
+    "tagline": "Exploring the tradeoffs between resiliency techniques and their energy overhead",
+    "description": "Energy conservation has arisen as the dominant focus of circuit and processor design, especially as designs become bigger and more complex. Resiliency is a metric of growing concern as chips scale, and is important for specific applications, like space-based circuits. Prior research investigates the tradeoffs between energy and resiliency from different levels of hierarchy. Our project investigates scaling these FIT rate and energy tradeoff calculations to large microprocessor and circuit designs. We seek to limit overdesign and consume only enough energy as is needed to achieve the target FIT rate. We will produce a scalable design metric model that allows quick FIT and energy tradeoffs to be evaluated for any size processor or circuit.",
+    "img_source": "images/project_learn.png",
+    "img_alt": "Energy vs. FIT as gates are upsized",
+    "color": "blue",
+    "dates": "2013-Now",
+    "featured": "no",
+    "documents" : [
+      "documents/learn_proposal.pdf|Project Proposal",
+      "documents/learn_midterm.pdf|Midterm Report",
+      "documents/learn_final.pdf|Final Report",
+      "documents/learn_presentation.pdf|Project Presentation",
+      "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf|MS Thesis"
+    ],
+    "url": "learn"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Slate is an LDPC and Turbo Engine",
+    "tagline": "A combined LDPC and turbo decoder ASIC written in Chisel",
+    "description": "LDPC and turbo codes are channel codes commonly used for wireless communication. Decoding algorithms are computationally demanding, and so efficient implementations are often inflexible, targeting only the codes specified by a given standard. When support for multiple standards is needed, multiple decoders are generally used. We study the algorithms for decoding each standard and find that some functional units can be shared between both types of decoders. This work presents a design for a combined architecture decoder that supports the codes defined in the 802.11ac and LTE standards. We present some preliminary performance results and show that the majority of the area is consumed by LDPC-specific components. We conclude that this combined architecture allows a turbo decoder to be added to an LDPC decoder with little overhead.",
+    "img_source": "images/project_slate.png",
+    "img_alt": "Combined LDPC and turbo block diagram",
+    "color": "yellow",
+    "dates": "2014",
+    "featured": "no",
+    "documents" : [ 
+      "documents/slate_proposal.pdf|Project Proposal",
+      "documents/slate_final.pdf|Final Report",
+      "documents/slate_presentation.pdf|Project Presentation" 
+    ],
+    "url": "slate"
+  },
+  {
+    "type": "Astronomy",
+    "title": "Mapping the North Polar Spur",
+    "tagline": "Using Leuschner Observatory to map the HI bubble of the North Polar Spur",
+    "description": "Above the Milky Way Galaxy lies a large source of ionized hydrogen and relativistic electrons, called the North Polar Spur. It roughly extends from galactic longitude 200&deg; to 50&deg; (passing through zero), all above the galactic plane from latitude 0&deg; to 90&deg;. The expected HI velocity pattern follows that of an expanding shell. To measure the spur, the new Leuschner radio telescope was used. The old telescope was replaced with a 5 m dish and updated data collection system. The dish can clearly see above altitude 15&deg; The east and west directions are partially obscured by a hill and optical telescope dome, respectively. Fortunately, during data acquisition, the spur appeared primarily to the south. The telescope splits the data into two polarizations. These are separately amplified, filtered, and down-converted to 150 MHz. While this is not baseband, the system relies on aliasing to finish the down-conversion. The final double sideband spectrum collected has a sampling rate of 24 MHz, or bandwidth of 12 MHz. Once collected, the data are passed through a polyphase filter bank, FFT, power, and accumulator block designed in Simulink and placed on a Roach 1 board. Finally, the two polarizations are auto-correlated and cross-correlated. Each spectrum read out represents about 0.8 seconds of data accumulation, which for an 8k spectrum is about 2000 accumulated sepctra.",
+    "img_source": "images/project_nps.png",
+    "img_alt": "HI velocities above our Galaxy",
+    "color": "purple",
+    "dates": "2015",
+    "featured": "yes",
+    "documents" : [ 
+      "documents/nps_lab_report.pdf|Project Report",
+      "documents/nps_presentation.pdf|Project Presentation" 
+    ],
+    "url": "nps"
+  },
+  {
+    "type": "Astronomy",
+    "title": "Detecting Exoplanet Magnetic Fields",
+    "tagline": "Using coronal mass ejections and a lunar telescope to detect exoplanet magnetic field radio signatures",
+    "description": "Planetary magnetic fields shield life from harmful radiation, but current terrestrial exoplanet magnetic field strength estimates predict signals too weak and too low frequency to detect. However, timely coronal mass ejections may boost signal strengths enough, and a radio telescope array placed on the Moon could detect the low frequencies emitted. Once built, this telescope should monitor exoplanets Gliese876 d, 55Cnc e, and GJ1214 b.",
+    "img_source": "images/project_exofields.png",
+    "img_alt": "Estimated exoplanet magnetic field signature strengths and radio telescope sensitivities",
+    "color": "purple",
+    "dates": "2014",
+    "featured": "no",
+    "documents" : [ 
+      "documents/exofields_report.pdf|Project Report",
+      "documents/exofields_presentation.pdf|Project Presentation" 
+    ],
+    "url": "exofields"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Splash: A Low-Power ASIC Spectrometer",
+    "tagline": "Single planetary low-power ASIC spectrometer with high resolution",
+    "description": "SPLASH is a low power, broad bandwidth, digital spectrometer for atmospheric composition measurements. The first design effort at UC Berkeley developed a combined 1.5 GHz bandwidth ADC frontend and a DSP backend, called SPLASH. The new spectrometer will feature a new high-bandwidth ADC designed by Rachel Hochman. Two copies of the ADC will digitize the I and Q bands separately, operating at a combined bandwith of 20 GHz. The SPLASH DSP backend was extended to accommodate the higher bandwidth and increased number of channels. This backend features a polyphase FIR filter, FFT, and frequency calibration scheme. The DSP backend was written Chisel, a Berkeley hardware construction language. Using Chisel allowed me to create a flexible DSP generator which supports any amount of breadth (parallelism), depth (channels), and performance (pipelining). It also handles a variety of bitwidth specifications, and it allows the choice of single-ported or dual-ported memories.",
+    "img_source": "images/project_splash.png",
+    "img_alt": "Top-level block diagram of digital backend",
+    "color": "red",
+    "dates": "2014-Now",
+    "featured": "no",
+    "documents" : [ ],
+    "url": "splash"
+  }
 ]

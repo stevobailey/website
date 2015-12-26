@@ -132,22 +132,24 @@ function loadPublications(pubSort) {
 function loadAbout() {
     text = "<img src=\"images/stevo.jpg\" alt=\"Stevo\" class=\"stevo-image\" />" +
             "<p class=\"minor-heading\">Hello! I'm Stevo!</p>" + 
-            "<p class=\"tagline\">February 13, 2015</p>" +
+            "<p class=\"tagline\">December 26, 2015</p>" +
             //"<img src=\"images/stevo.jpg\" alt=\"Stevo\" style=\"float:left; padding:8px\" />" +
-            "<p class=\"mod descr\">My goal in life is to solve the <a href=\"http://en.wikipedia.org/wiki/Health_threat_from_cosmic_rays\">space radiation problem</a>." + 
-            " I'm a third-year PhD graduate student at the University of Californa, Berkeley. I'm in the Electrical Engineering and Computer Science (EECS) department, researching under Professors <a href=\"http://www.eecs.berkeley.edu/~bora/\">Bora Nikolic</a> and <a href=\"http://www.eecs.berkeley.edu/~krste/\">Krste Asanovic</a>.</p>" +
-            "<p class=\"mod descr\"><strong>Resume:</strong> <a href=\"documents/stevo_bailey_resume.pdf\">PDF</a> (updated Jan. 2015)<br><strong>Status:</strong> I'm in Berkeley Fall 2014 and Spring 2015<br><strong>Availability:</strong> I'm interning at NVIDIA this summer!</p>" +
+            //"<p class=\"mod descr\">My goal in life is to solve the <a href=\"http://en.wikipedia.org/wiki/Health_threat_from_cosmic_rays\">space radiation problem</a>." + 
+            "<p class=\"mod descr\">" + 
+            "I'm a fourth-year PhD graduate student at the University of Californa, Berkeley. I'm in the Electrical Engineering and Computer Science (EECS) department, researching under Professors <a href=\"http://www.eecs.berkeley.edu/~bora/\">Bora Nikolic</a> and <a href=\"http://www.eecs.berkeley.edu/~krste/\">Krste Asanovic</a>.</p>" +
+            "<p class=\"mod descr\"><strong>Resume:</strong> <a href=\"documents/stevo_bailey_resume.pdf\">PDF</a> (updated Dec. 2015)<br><strong>Status:</strong> I'm in Berkeley Spring 2016.<br><strong>Availability:</strong> I'm doing research at Berkeley in Summer 2016.</p>" +
             "<p class=\"mod descr\">Here, have some links!</p>" +
             "<p class=\"supp\"><ul><li><a href=\"http://www.space.com\">Space.com</a> - space-related news site</li>" +
             "<li><a href=\"http://nextbigfuture.com/\">Next Big Future</a> - news about awesome, futuristic science and technology</li>" +
             "<li><a href=\"http://www.ucolick.org/SaveLick/index.html\">Save Lick Observatory</a> - help save a financially ailing research telescope!</li>" +
             "<li><a href=\"http://www.jpl.nasa.gov\">NASA Jet Propulsion Laboratory</a> - satellites and rovers for scientific research</li>" + 
+            "<li><a href=\"http://www.nvidia.com\">Nvidia</a> - graphics cards and other gaming essentials</li>" + 
             "<li><a href=\"http://bwrcs.eecs.berkeley.edu/comic/\">ComIC</a> - integrated circuits design group at UC Berkeley that I'm in</li></ul></p>";
 
     setBoxData("Home", text, "blue", null, null);
 
-	text = "<img src=\"images/fish.jpg\" alt=\"staring contest\" class=\"mod about-image\" />" +
-            "<p>Stevo received his B.S. degrees in Engineering Science and Physics from The University of Virginia in 2012. During his undergraduate studies he interned at Jefferson Labs through the Virginia Microelectronics Consortium and Old Dominion University. He also researched fault-tolerant, reconfigurable adder designs for future nanoelectronic systems at UVA. In 2012 he joined the Berkeley Wireless Research Center. He interned at the NASA Jet Propulsion Laboratory in 2014. He is currently pursuing a Ph.D. at the University of California, Berkeley.</p><p>His research interests include robust and power-efficient processor and ASIC design. He is currently exploring soft-error resilient logic design techniques and researching automation of these techniques. He also dislikes talking in the third person.</p>";
+	text = "<img src=\"images/tm.jpg\" alt=\"muddy weather\" class=\"mod about-image\" />" +
+            "<p>Stevo received his B.S. degrees in Engineering Science and Physics from The University of Virginia in 2012, with a minor in Electrical Engineering. During his undergraduate studies he interned at Jefferson Labs through the Virginia Microelectronics Consortium and Old Dominion University. He also researched fault-tolerant, reconfigurable adder designs for future nanoelectronic systems at UVA under Professor Mircea Stan. In 2012 he joined the Berkeley Wireless Research Center at the University of California, Berkeley. He obtained his M.S. in Electrical Engineering and Computer Science from Berkeley in 2014. He held internships at the NASA Jet Propulsion Laboratory in 2014 and Nvidia Corporation in 2015. He is currently pursuing a Ph.D. at Berkeley.</p><p>His research interests include robust and power-efficient processor and ASIC design. He is currently experimenting with machine learning and its application to and in integrated circuits.</p>";
     
     setBoxData("About", text, "gray", null, null);
     loadNewBoxes();
@@ -254,9 +256,28 @@ function sortProjects(projects) {
     //insertion sort by date first
     var array = [];
     for (i = 0; i < projects.length; i++) {
-        compare = Number(projects[i].dates.substring(0, 4));
+        init_date = Number(projects[i].dates.substring(0, 4));
+        fin_date = init_date
+        if (projects[i].dates.length > 4) {
+          if (projects[i].dates.substring(5) === "Now") {
+            fin_date = 9999
+          }
+          else {
+            fin_date = Number(projects[i].dates.substring(5)); 
+          }
+        }
         for (j = array.push(i) - 2; j >= 0; j--) {
-            if (compare > Number(projects[array[j]].dates.substring(0, 4))) {
+            p2_init_date = Number(projects[array[j]].dates.substring(0, 4));
+            p2_fin_date = p2_init_date
+            if (projects[array[j]].dates.length > 4) {
+                if (projects[array[j]].dates.substring(5) === "Now") {
+                  p2_fin_date = 9999
+                }
+                else {
+                  p2_fin_date = Number(projects[array[j]].dates.substring(5)); 
+                }
+            }
+            if (fin_date > p2_fin_date) {
                 temp = array[j + 1];
                 array[j + 1] = array[j];
                 array[j] = temp;

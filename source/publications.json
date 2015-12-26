@@ -1,49 +1,80 @@
 [
 	{
-        "authors": [
-            "Stevo Bailey",
-            "Mircea Stan"
-        ],
-        "title": "A new taxonomy for reconfigurable prefix adders",
-        "source": "IEEE International Symposium on Circuits and Systems (ISCAS)",
-        "month": "May",
-        "year": 2012,
-        "pages": "1227 - 1230",
-        "link": "http://dx.doi.org/10.1109/ISCAS.2012.6271457",
+    "authors": [
+      "Stevo Bailey",
+      "Mircea Stan"
+    ],
+    "title": "A new taxonomy for reconfigurable prefix adders",
+    "source": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "month": "May",
+    "year": 2012,
+    "pages": "1227 - 1230",
+    "link": "http://dx.doi.org/10.1109/ISCAS.2012.6271457",
 		"awards": "Student Best Paper Award Finalist",
-        "type": "conference"
-    },
+    "type": "conference"
+  },
 	{
-        "authors": [
-            "Ruzica Jevtic",
-            "Hahn-Phuc Le",
-            "Mikeleon Blagojevic",
-            "Stevo Bailey",
-            "Krste Asanovic",
-            "Elad Alon",
-            "Bora Nikolic"
-        ],
-        "title": "Per-core DVFS with switched-capacitor converters for energy efficiency in manycore processors",
-        "source": "IEEE Transactions on Very Large Scale Integration (TVLSI)",
-        "month": "May",
-        "year": 2014,
-        "pages": "",
-        "link": "http://dx.doi.org/10.1109/TVLSI.2014.2316919",
-        "awards": "",
-        "type": "journal"
-    },
+    "authors": [
+      "Ruzica Jevtic",
+      "Hahn-Phuc Le",
+      "Mikeleon Blagojevic",
+      "Stevo Bailey",
+      "Krste Asanovic",
+      "Elad Alon",
+      "Bora Nikolic"
+    ],
+    "title": "Per-core DVFS with switched-capacitor converters for energy efficiency in manycore processors",
+    "source": "IEEE Transactions on Very Large Scale Integration (TVLSI)",
+    "month": "May",
+    "year": 2014,
+    "pages": "",
+    "link": "http://dx.doi.org/10.1109/TVLSI.2014.2316919",
+    "awards": "",
+    "type": "journal"
+  },
 	{
-        "authors": [
-            "Stevo Bailey",
-            "Bora Nikolic"
-        ],
-        "title": "Modeling Radiation-Induced Soft Errors in Logic and the Overhead of Resiliency Techniques",
-        "source": "EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-233",
-        "month": "Dec",
-        "year": 2014,
-        "pages": "",
-        "link": "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf",
-        "awards": "",
-        "type": "thesis"
-    }
+    "authors": [
+      "Stevo Bailey",
+      "Bora Nikolic"
+    ],
+    "title": "Modeling Radiation-Induced Soft Errors in Logic and the Overhead of Resiliency Techniques",
+    "source": "EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-233",
+    "month": "Dec",
+    "year": 2014,
+    "pages": "",
+    "link": "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf",
+    "awards": "",
+    "type": "thesis"
+  },
+  {
+    "authors": [
+      "Brian Zimmer",
+      "Yunsup Lee",
+      "Alberto Puggelli",
+      "Jaehwa Kwak",
+      "Ruzica Jevtic",
+      "Ben Keller",
+      "Stevo Bailey",
+      "Milovan Blagojevic",
+      "Pi-Feng Chiu",
+      "Hanh-Phuc Le",
+      "Po-Hung Chen",
+      "Nicholas Sutardja",
+      "Rimas Avizieni",
+      "Andrew Waterman",
+      "Brian Richards",
+      "Philippe Flatresse",
+      "Elad Alon",
+      "Krste Asanovic",
+      "Borivoje Nikolic"
+    ],
+    "title": "A RISC-V vector processor with tightly-integrated switched-capacitor DC-DC converters in 28nm FDSOI",
+    "source": "2015 Symposium on VLSI Circuits",
+    "month": "June",
+    "year": 2015,
+    "pages":"C316 - C317",
+    "link": "http://dx.doi.org/10.1109/VLSIC.2015.7231305",
+    "awards": "",
+    "type": "conference"
+  }
 ]
