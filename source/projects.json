@@ -2,7 +2,7 @@
   {
     "type": "Electrical Engineering",
     "title": "Hurricane: A spatial computing fabric",
-    "tagline": "Leveraging RISC-V to simplify manycore processors",
+    "tagline": "Leveraging RISC-V to simplify DSP processing",
     "description": "Coming soon!",
     "img_source": "images/project_new.png",
     "img_alt": "New project",
@@ -23,7 +23,7 @@
     "dates": "2011-2012",
     "featured": "no",
     "documents": [
-      "http://dx.doi.org/10.1109/ISCAS.2012.6271457|A new taxonomy for reconfigurable prefix adders"
+      "http://dx.doi.org/10.1109/ISCAS.2012.6271457|2012 ISSCC paper, nominated for best student paper award"
     ],
     "url": "superset"
   },
@@ -35,10 +35,13 @@
     "img_source": "images/project_multicore.png",
     "img_alt": "DC-to-DC multicore",
     "color": "green",
-    "dates": "2012-2015",
+    "dates": "2012-2016",
     "featured": "no",
     "documents" : [ 
-      "http://dx.doi.org/10.1109/TVLSI.2014.2316919|TVLSI Paper on Energy Modeling" 
+      "http://dx.doi.org/10.1109/JSSC.2016.2519386|2016 JSSC paper, expands on VLSI paper",
+      "http://dx.doi.org/10.1109/MM.2016.11|2016 MICRO paper on our agile approach to chip design",
+      "http://dx.doi.org/10.1109/VLSIC.2015.7231305|2015 VLSI paper on Raven 3",
+      "http://dx.doi.org/10.1109/TVLSI.2014.2316919|2014 TVLSI Paper on Energy Modeling"
     ],
     "url": "raven"
   },
@@ -135,7 +138,7 @@
     "img_alt": "HI velocities above our Galaxy",
     "color": "purple",
     "dates": "2015",
-    "featured": "yes",
+    "featured": "no",
     "documents" : [ 
       "documents/nps_lab_report.pdf|Project Report",
       "documents/nps_presentation.pdf|Project Presentation" 
@@ -146,7 +149,7 @@
     "type": "Astronomy",
     "title": "Detecting Exoplanet Magnetic Fields",
     "tagline": "Using coronal mass ejections and a lunar telescope to detect exoplanet magnetic field radio signatures",
-    "description": "Planetary magnetic fields shield life from harmful radiation, but current terrestrial exoplanet magnetic field strength estimates predict signals too weak and too low frequency to detect. However, timely coronal mass ejections may boost signal strengths enough, and a radio telescope array placed on the Moon could detect the low frequencies emitted. Once built, this telescope should monitor exoplanets Gliese876 d, 55Cnc e, and GJ1214 b.",
+    "description": "Planetary magnetic fields shield life from harmful radiation, but current terrestrial exoplanet magnetic field strength estimates predict signals too weak and too low frequency to detect. However, timely coronal mass ejections may boost signal strengths enough, and these combined wih a radio telescope array placed on the Moon could detect the low frequencies emitted by exoplanets. Once built, this telescope should monitor exoplanets Gliese876 d, 55Cnc e, and GJ1214 b. When the stars of these planets emit high-energy, high-mass coronal ejections, the energy output should be detectable by a typical radio telescope placed on the moon, permitting detailed evaluation and discussion of the magnetic fields of these exoplanets.",
     "img_source": "images/project_exofields.png",
     "img_alt": "Estimated exoplanet magnetic field signature strengths and radio telescope sensitivities",
     "color": "purple",
@@ -170,5 +173,46 @@
     "featured": "no",
     "documents" : [ ],
     "url": "splash"
+  },
+  {
+    "type": "Philanthropy",
+    "title": "Rainwater Catchment in Carancas, Peru",
+    "tagline": "An alternative source of water for the arsenic-laden primary school in Carancas, Peru, through Engineers Without Borders",
+    "description": "The new project in the community of Carancas is a collaboration with the community of Carancas, the Carancas primary school (Ministry of Education), Suma Marka (NGO), the Carancas health post (Ministry of Health) and the UC Berkeley student chapter to implement a rainwater catchment system on the grounds of the Carancas primary school that will provide year round potable water to approximately 30 students and five school staff.  The RWC system will also serve to the community of Carancas (approximate population of 2,000), as well as surrounding communities in the region, as a demonstration of the rainwater catchment system technology as a viable year round source of potable water that is arsenic free.",
+    "img_source": "images/project_peru.jpg",
+    "img_alt": "EWB project in peru",
+    "color": "blue",
+    "dates": "2016-Now",
+    "featured": "yes",
+    "documents" : [
+      "http://ewb.berkeley.edu/projects/peru/|Peru Project Overview"
+     ],
+    "url": "carancas"
+  },
+  {
+    "type": "Electrical Engineering",
+    "title": "Lessonn: A neural network project",
+    "tagline": "Leveraging SqueezeNet for localized low-power computation",
+    "description": "Coming soon!",
+    "img_source": "images/project_new.png",
+    "img_alt": "New project",
+    "color": "aqua",
+    "dates": "2016-Now",
+    "featured": "no",
+    "documents" : [ ],
+    "url": "lessonn"
+  },
+  {
+    "type": "Entertainment",
+    "title": "Champignon!",
+    "tagline": "Let's cook!",
+    "description": "An RPG game designed using RPG Maker MV.",
+    "img_source": "images/project_new.png",
+    "img_alt": "New project",
+    "color": "aqua",
+    "dates": "2016-Now",
+    "featured": "no",
+    "documents" : [ ],
+    "url": "champignon"
   }
 ]

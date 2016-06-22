@@ -60,7 +60,7 @@ function loadProject(url) {
                     "<p class=\"mod descr\">" + projects[array[i]].description + "</p>";
               
                 for (j = 0; j < projects[array[i]].documents.length; j++) {
-                    if (j == 0) { text += "<p class=\"supp\"><strong>Reports and Publications:</strong><ul>"; }
+                    if (j == 0) { text += "<p class=\"supp\"><strong>Documents and Links:</strong><ul>"; }
               
                     text += "<li><a href=\"" + projects[array[i]].documents[j].substring(0, projects[array[i]].documents[j].indexOf("|")) + "\">" +
                         projects[array[i]].documents[j].substring(projects[array[i]].documents[j].indexOf("|")+1) + "</a></li>";
@@ -114,7 +114,13 @@ function loadPublications(pubSort) {
                     authors += ", ";
                 }
 
+                if (pubs[array[i]].authors[j] == "Stevo Bailey") {
+                    authors += "<b>";
+                }
                 authors += pubs[array[i]].authors[j];
+                if (pubs[array[i]].authors[j] == "Stevo Bailey") {
+                    authors += "</b>";
+                }
             }
 
             //format data and add to string
@@ -132,12 +138,12 @@ function loadPublications(pubSort) {
 function loadAbout() {
     text = "<img src=\"images/stevo.jpg\" alt=\"Stevo\" class=\"stevo-image\" />" +
             "<p class=\"minor-heading\">Hello! I'm Stevo!</p>" + 
-            "<p class=\"tagline\">December 26, 2015</p>" +
-            //"<img src=\"images/stevo.jpg\" alt=\"Stevo\" style=\"float:left; padding:8px\" />" +
-            //"<p class=\"mod descr\">My goal in life is to solve the <a href=\"http://en.wikipedia.org/wiki/Health_threat_from_cosmic_rays\">space radiation problem</a>." + 
-            "<p class=\"mod descr\">" + 
-            "I'm a fourth-year PhD graduate student at the University of Californa, Berkeley. I'm in the Electrical Engineering and Computer Science (EECS) department, researching under Professors <a href=\"http://www.eecs.berkeley.edu/~bora/\">Bora Nikolic</a> and <a href=\"http://www.eecs.berkeley.edu/~krste/\">Krste Asanovic</a>.</p>" +
-            "<p class=\"mod descr\"><strong>Resume:</strong> <a href=\"documents/stevo_bailey_resume.pdf\">PDF</a> (updated Dec. 2015)<br><strong>Status:</strong> I'm in Berkeley Spring 2016.<br><strong>Availability:</strong> I'm doing research at Berkeley in Summer 2016.</p>" +
+            "<p class=\"tagline\">June 10, 2016</p>" +
+            "<p class=\"mod descr\"> I'm a fifth-year PhD graduate student at the University of Californa, Berkeley. I'm in the Electrical Engineering and Computer Science (EECS) department, " +
+            "researching under Professor <a href=\"http://www.eecs.berkeley.edu/~bora/\">Bora Nikolic</a>.</p>" +
+            "<p class=\"mod descr\"><strong>Resume:</strong> <a href=\"documents/stevo_bailey_resume.pdf\">PDF</a> (updated June 2016)<br>" + 
+            "<strong>Curriculum Vitae:</strong> <a href=\"documents/stevo_bailey_cv.pdf\">PDF</a> (updated June 2016)<br>" + 
+            "<strong>Status:</strong> I'm in Berkeley Summer 2016.<br><strong>Availability:</strong> I'm doing research at Berkeley in Summer 2016.</p>" +
             "<p class=\"mod descr\">Here, have some links!</p>" +
             "<p class=\"supp\"><ul><li><a href=\"http://www.space.com\">Space.com</a> - space-related news site</li>" +
             "<li><a href=\"http://nextbigfuture.com/\">Next Big Future</a> - news about awesome, futuristic science and technology</li>" +
@@ -149,7 +155,16 @@ function loadAbout() {
     setBoxData("Home", text, "blue", null, null);
 
 	text = "<img src=\"images/tm.jpg\" alt=\"muddy weather\" class=\"mod about-image\" />" +
-            "<p>Stevo received his B.S. degrees in Engineering Science and Physics from The University of Virginia in 2012, with a minor in Electrical Engineering. During his undergraduate studies he interned at Jefferson Labs through the Virginia Microelectronics Consortium and Old Dominion University. He also researched fault-tolerant, reconfigurable adder designs for future nanoelectronic systems at UVA under Professor Mircea Stan. In 2012 he joined the Berkeley Wireless Research Center at the University of California, Berkeley. He obtained his M.S. in Electrical Engineering and Computer Science from Berkeley in 2014. He held internships at the NASA Jet Propulsion Laboratory in 2014 and Nvidia Corporation in 2015. He is currently pursuing a Ph.D. at Berkeley.</p><p>His research interests include robust and power-efficient processor and ASIC design. He is currently experimenting with machine learning and its application to and in integrated circuits.</p>";
+            "<p>Stevo received his B.S. degrees in Engineering Science and Physics from The University of Virginia in 2012, with a minor in Electrical Engineering. " +
+            "During his undergraduate studies he interned at Jefferson Labs through the Virginia Microelectronics Consortium and Old Dominion University. " +
+            "He also researched fault-tolerant, reconfigurable adder designs for future nanoelectronic systems at UVA under Professor Mircea Stan. " +
+            "In 2012 he joined the Berkeley Wireless Research Center at the University of California, Berkeley. He obtained his M.S. in Electrical Engineering " +
+            "and Computer Science from Berkeley in 2014. He held internships at the NASA Jet Propulsion Laboratory in 2014 and Nvidia Corporation in 2015. " +
+            "He is currently pursuing a Ph.D. at Berkeley.</p><p>His research interests include robust and power-efficient processor and ASIC design. " +
+            "He is currently experimenting with machine learning and its application to and in integrated circuits. Outside of academia, he volunteers at " +
+            "the <a href=\"http://www.altabatessummit.org\">Alta Bates Summit medical center</a>, takes <a href=\"http://www.mansfieldmusic.com/\">piano lessons</a>, " +
+            "exercises at the <a href=\"http://recsports.berkeley.edu/\">RSF (gym)</a> and runs regularly, volunteers as a student member and webmaster for the UC Berkeley " +
+            "chapter of <a href=\"http://ewb.berkeley.edu/\">Engineers Without Borders</a>, and designs random video games using <a href=\"http://www.rpgmakerweb.com/products/programs/rpg-maker-mv/\">RPG Maker MV</a>.</p>";
     
     setBoxData("About", text, "gray", null, null);
     loadNewBoxes();
@@ -257,10 +272,10 @@ function sortProjects(projects) {
     var array = [];
     for (i = 0; i < projects.length; i++) {
         init_date = Number(projects[i].dates.substring(0, 4));
-        fin_date = init_date
+        fin_date = init_date;
         if (projects[i].dates.length > 4) {
           if (projects[i].dates.substring(5) === "Now") {
-            fin_date = 9999
+            fin_date = 9999;
           }
           else {
             fin_date = Number(projects[i].dates.substring(5)); 
@@ -277,14 +292,19 @@ function sortProjects(projects) {
                   p2_fin_date = Number(projects[array[j]].dates.substring(5)); 
                 }
             }
-            if (fin_date > p2_fin_date) {
+            if (init_date > p2_init_date && fin_date >= p2_fin_date) {
                 temp = array[j + 1];
                 array[j + 1] = array[j];
                 array[j] = temp;
             }
-            else {
-                break;
+            else if (fin_date > p2_fin_date) {
+                temp = array[j + 1];
+                array[j + 1] = array[j];
+                array[j] = temp;
             }
+            //else {
+            //    break;
+            //}
         }
     }
 
