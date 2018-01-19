@@ -5,11 +5,11 @@
       "Mircea Stan"
     ],
     "title": "A new taxonomy for reconfigurable prefix adders",
-    "source": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "source": "ISCAS",
     "month": "May",
     "year": 2012,
     "pages": "1227 - 1230",
-    "link": "http://dx.doi.org/10.1109/ISCAS.2012.6271457",
+    "link": "https://doi.org/10.1109/ISCAS.2012.6271457",
 		"awards": "Student Best Paper Award Finalist",
     "type": "conference"
   },
@@ -21,25 +21,25 @@
       "Stevo Bailey",
       "Krste Asanovic",
       "Elad Alon",
-      "Bora Nikolic"
+      "Borivoje Nikolic"
     ],
     "title": "Per-core DVFS with switched-capacitor converters for energy efficiency in manycore processors",
-    "source": "IEEE Transactions on Very Large Scale Integration (TVLSI)",
+    "source": "TVLSI",
     "month": "May",
     "year": 2014,
-    "pages": "",
-    "link": "http://dx.doi.org/10.1109/TVLSI.2014.2316919",
+    "pages": "723 - 730",
+    "link": "https://doi.org/10.1109/TVLSI.2014.2316919",
     "awards": "",
     "type": "journal"
   },
 	{
     "authors": [
       "Stevo Bailey",
-      "Bora Nikolic"
+      "Borivoje Nikolic"
     ],
     "title": "Modeling Radiation-Induced Soft Errors in Logic and the Overhead of Resiliency Techniques",
     "source": "EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-233",
-    "month": "Dec",
+    "month": "December",
     "year": 2014,
     "pages": "",
     "link": "http://www.eecs.berkeley.edu/Pubs/TechRpts/2014/EECS-2014-233.pdf",
@@ -69,11 +69,11 @@
       "Borivoje Nikolic"
     ],
     "title": "A RISC-V vector processor with tightly-integrated switched-capacitor DC-DC converters in 28nm FDSOI",
-    "source": "2015 Symposium on VLSI Circuits",
+    "source": "VLSI",
     "month": "June",
     "year": 2015,
     "pages":"C316 - C317",
-    "link": "http://dx.doi.org/10.1109/VLSIC.2015.7231305",
+    "link": "https://doi.org/10.1109/VLSIC.2015.7231305",
     "awards": "",
     "type": "conference"
   },
@@ -103,7 +103,7 @@
     "month": "March",
     "year": 2016,
     "pages":"8 - 20",
-    "link": "http://dx.doi.org/10.1109/MM.2016.11",
+    "link": "https://doi.org/10.1109/MM.2016.11",
     "awards": "",
     "type": "journal"
   },
@@ -134,8 +134,130 @@
     "month": "April",
     "year": 2016,
     "pages":"930 - 942",
-    "link": "http://dx.doi.org/10.1109/JSSC.2016.2519386",
+    "link": "https://doi.org/10.1109/JSSC.2016.2519386",
     "awards": "",
     "type": "journal"
+  },
+	{
+    "authors": [
+      "Ben Keller",
+      "Martin Cochet",
+      "Brian Zimmer",
+      "Jaehwa Kwak",
+      "Alberto Puggelli",
+      "Yunsup Lee",
+      "Milovan Blagojevic",
+      "Stevo Bailey",
+      "Pi-Feng Chiu",
+      "Palmer Dabbelt",
+      "Colin Schmidt",
+      "Elad Alon",
+      "Krste Asanovic",
+      "Borivoje Nikolic"
+    ],
+    "title": "A RISC-V Processor SoC With Integrated Power Management at Submicrosecond Timescales in 28 nm FD-SOI",
+    "source": "JSSC",
+    "month": "May",
+    "year": 2017,
+    "pages": "1863 - 1875",
+    "link": "https://doi.org/10.1109/JSSC.2017.2690859",
+		"awards": "",
+    "type": "journal"
+  },
+	{
+    "authors": [
+      "Ben Keller",
+      "Martin Cochet",
+      "Brian Zimmer",
+      "Yunsup Lee",
+      "Milovan Blagojevic",
+      "Jaehwa Kwak",
+      "Alberto Puggelli",
+      "Stevo Bailey",
+      "Pi-Feng Chiu",
+      "Palmer Dabbelt",
+      "Colin Schmidt",
+      "Elad Alon",
+      "Krste Asanovic",
+      "Borivoje Nikolic"
+    ],
+    "title": "Sub-microsecond adaptive voltage scaling in a 28nm FD-SOI processor SoC",
+    "source": "ESSCIRC",
+    "month": "September",
+    "year": 2016,
+    "pages": "269 - 272",
+    "link": "https://doi.org/10.1109/ESSCIRC.2016.7598294",
+		"awards": "",
+    "type": "conference"
+  },
+	{
+    "authors": [
+      "Yunsup Lee",
+      "Brian Zimmer",
+      "Andrew Waterman",
+      "Alberto Puggelli",
+      "Jaehwa Kwak",
+      "Ruzica Jevtic",
+      "Ben Keller",
+      "Stevo Bailey",
+      "Milovan Blagojevic",
+      "Pi-Feng Chiu",
+      "Henry Cook",
+      "Rimas Avizienis",
+      "Brian Richards",
+      "Elad Alon",
+      "Borivoje Nikolic",
+      "Krste Asanovic"
+    ],
+    "title": "Raven: A 28nm RISC-V vector processor with integrated switched-capacitor DC-DC converters and adaptive clocking",
+    "source": "Hot Chips Symposium",
+    "month": "August",
+    "year": 2015,
+    "pages": "1 - 45",
+    "link": "https://doi.org/10.1109/HOTCHIPS.2015.7477469",
+		"awards": "",
+    "type": "conference"
+  },
+	{
+    "authors": [
+      "Angie Wang",
+      "Brian Richards",
+      "Palmer Dabbelt",
+      "Howard Mao",
+      "Stevo Bailey",
+      "Jaeduk Han",
+      "Eric Chang",
+      "James Dunn",
+      "Elad Alon",
+      "Borivoje Nikolic"
+    ],
+    "title": "A 0.37mm<sup>2</sup> LTE/Wi-Fi compatible, memory-based, runtime-reconfigurable 2<sup>n</sup>3<sup>m</sup>5<sup>k</sup> FFT accelerator integrated with a RISC-V core in 16nm FinFET",
+    "source": "ASSCC",
+    "month": "November",
+    "year": 2017,
+    "pages": "305 - 308",
+    "link": "https://doi.org/10.1109/ASSCC.2017.8240277",
+		"awards": "",
+    "type": "conference"
+  },
+	{
+    "authors": [
+      "Stevo Bailey",
+      "John Wright",
+      "Nandish Mehta",
+      "Rachel Hochman",
+      "Robert Jarnot",
+      "Vladimir Milovanovic",
+      "Dan Werthimer",
+      "Borivoje Nikolic"
+    ],
+    "title": "A 28nm FDSOI 8192-Point Digital ASIC Spectrometer from a Chisel Generator",
+    "source": "CICC",
+    "month": "April",
+    "year": 2018,
+    "pages": "",
+    "link": "",
+		"awards": "",
+    "type": "conference"
   }
 ]

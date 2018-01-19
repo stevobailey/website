@@ -1,16 +1,20 @@
 [
   {
     "type": "Electrical Engineering",
-    "title": "Hurricane: A spatial computing fabric",
-    "tagline": "Leveraging RISC-V to simplify DSP processing",
-    "description": "Coming soon!",
-    "img_source": "images/project_new.png",
-    "img_alt": "New project",
-    "color": "aqua",
-    "dates": "2014-Now",
-    "featured": "no",
-    "documents": [ ],
-    "url": "hurricane"
+    "title": "Craft: Rapid ASIC Design",
+    "tagline": "Parameterized digital and analog hardware generators reduce ASIC design time and cost",
+    "description": "ASIC design takes a significant time and financial investment. Many designs share similar analog and digital computational elements, but inflexible IP prevents design reuse and forces frequent redesign. The Craft project aims to reduce ASIC design time and cost by creating a new methodology leveraging parameterized digital and analog hardware generators to support a wide array of DSP applications. Craft 1 taped out in 2016 to test the new technology and early design work. We taped out two more chips in 2017 to prove the efficacy of this methodology. The first chip performs a standard radar receive processing DSP algorithm to demonstrate Chisel digital generators with a BAG (Berkeley Analog Generator) ADC. This chip was done in collaboration with Northrup Grumman Corporation and Cadence Design Systems. The second chip implements a BAG-generated high-speed SERDES, a variation on the first chip's BAG ADC, a custom mixer-first ADC, and a new Chisel FFT following the Craft 1 design.",
+    "img_source": "images/project_craft.png",
+    "img_alt": "Craft DSP Generator",
+    "color": "red",
+    "dates": "2016-Now",
+    "featured": "yes",
+    "documents": [ 
+      "https://github.com/ucb-art/craft2-chip|Github code for generating the Radar chip",
+      "https://doi.org/10.1109/ASSCC.2017.8240277|2017 ASSCC paper on Craft 1 FFT design",
+      "https://github.com/ucb-bar/generator-bootcamp|Training materials for our Craft design methodology (Github)"
+    ],
+    "url": "craft"
   },
   {
     "type": "Electrical Engineering",
@@ -31,16 +35,19 @@
     "type": "Electrical Engineering",
     "title": "Raven: A Low-Power Multi-Core Processor",
     "tagline": "Extremely energy-efficient multi-core processor in nanoscale CMOS for media processing in portable devices",
-    "description": "Many of the future applications that will drive the need for greater performance are naturally highly parallel and process massive data sets, where individual point results are of less interest than aggregate statistics or behavior. Examples include statistical machine learning, rich human-machine interfaces, and physical modeling for games and virtual worlds. In this project, the goal is to develop new highly parallel many-core architectures that exploit the attributes of these parallel, error-tolerant applications to tolerate variability in current and upcoming technologies at very low supply voltages and hence attain large gains in energy efficiency. An integrated cross-disciplinary research program is proposed–cutting across software, architecture, and circuits. Each core is designed to be a single vector-thread lane, with an independent control processor and a vector-thread execution engine, and hundreds of such lanes will be designed to fit in the area budget. Cores with similar characteristics will be identified through the pre-characterization phase and will be grouped to form clusters. Their delay and performance will be notified to control processor, so that it can perform dynamic scheduling of tasks to cores with a goal of achieving extreme energy efficiency. Additionally, hardware delay and performance monitors will be embedded in logic so that the process variability can be controlled through immediate dynamic reconfiguration. Last, SRAM arrays will be designed using a variety of write-ability, read-ability, and stability assist techniques to enable error-free operation at low supply voltages, and will feature error correction to enable dynamic characterization and reconfiguration of memory. Together, these techniques will allow the entire system to operate at each die’s own optimal energy-efficiency point, even in the face of increasing transistor variability. Image taken from \"Design Techniques for Fully Integrated Switched-Capacitor DC-DC Converters\" by H-P. Le, S. Sanders, and E. Alon.",
-    "img_source": "images/project_multicore.png",
-    "img_alt": "DC-to-DC multicore",
+    "description": "Many of the future applications that will drive the need for greater performance are naturally highly parallel and process massive data sets, where individual point results are of less interest than aggregate statistics or behavior. Examples include statistical machine learning, rich human-machine interfaces, and physical modeling for games and virtual worlds. In this project, the goal is to develop new highly parallel many-core architectures that exploit the attributes of these parallel, error-tolerant applications to tolerate variability in current and upcoming technologies at very low supply voltages and hence attain large gains in energy efficiency. An integrated cross-disciplinary research program is proposed–cutting across software, architecture, and circuits. Each core is designed to be a single vector-thread lane, with an independent control processor and a vector-thread execution engine, and hundreds of such lanes will be designed to fit in the area budget. Cores with similar characteristics will be identified through the pre-characterization phase and will be grouped to form clusters. Their delay and performance will be notified to control processor, so that it can perform dynamic scheduling of tasks to cores with a goal of achieving extreme energy efficiency. Additionally, hardware delay and performance monitors will be embedded in logic so that the process variability can be controlled through immediate dynamic reconfiguration. Last, SRAM arrays will be designed using a variety of write-ability, read-ability, and stability assist techniques to enable error-free operation at low supply voltages, and will feature error correction to enable dynamic characterization and reconfiguration of memory. Together, these techniques will allow the entire system to operate at each die’s own optimal energy-efficiency point, even in the face of increasing transistor variability.",
+    "img_source": "images/project_raven.png",
+    "img_alt": "Rippling core supply responding to workload change",
     "color": "green",
-    "dates": "2012-2016",
+    "dates": "2012-2017",
     "featured": "no",
     "documents" : [ 
+      "https://doi.org/10.1109/JSSC.2017.2690859|2017 JSSC paper, expands on ESSCIRC paper",
+      "https://doi.org/10.1109/ESSCIRC.2016.7598294|2016 ESSCIRC paper on Raven 4",
       "http://dx.doi.org/10.1109/JSSC.2016.2519386|2016 JSSC paper, expands on VLSI paper",
       "http://dx.doi.org/10.1109/MM.2016.11|2016 MICRO paper on our agile approach to chip design",
       "http://dx.doi.org/10.1109/VLSIC.2015.7231305|2015 VLSI paper on Raven 3",
+      "https://doi.org/10.1109/HOTCHIPS.2015.7477469|2015 Hot Chips paper on Raven 3",
       "http://dx.doi.org/10.1109/TVLSI.2014.2316919|2014 TVLSI Paper on Energy Modeling"
     ],
     "url": "raven"
@@ -101,7 +108,7 @@
     "img_source": "images/project_learn.png",
     "img_alt": "Energy vs. FIT as gates are upsized",
     "color": "blue",
-    "dates": "2013-Now",
+    "dates": "2013-2016",
     "featured": "no",
     "documents" : [
       "documents/learn_proposal.pdf|Project Proposal",
@@ -169,7 +176,7 @@
     "img_source": "images/project_splash.png",
     "img_alt": "Top-level block diagram of digital backend",
     "color": "red",
-    "dates": "2014-Now",
+    "dates": "2014-2018",
     "featured": "no",
     "documents" : [ ],
     "url": "splash"
@@ -182,37 +189,11 @@
     "img_source": "images/project_peru.jpg",
     "img_alt": "EWB project in peru",
     "color": "blue",
-    "dates": "2016-Now",
-    "featured": "yes",
+    "dates": "2016-2017",
+    "featured": "no",
     "documents" : [
       "http://ewb.berkeley.edu/projects/peru/|Peru Project Overview"
      ],
     "url": "carancas"
-  },
-  {
-    "type": "Electrical Engineering",
-    "title": "Lessonn: A neural network project",
-    "tagline": "Leveraging SqueezeNet for localized low-power computation",
-    "description": "Coming soon!",
-    "img_source": "images/project_new.png",
-    "img_alt": "New project",
-    "color": "aqua",
-    "dates": "2016-Now",
-    "featured": "no",
-    "documents" : [ ],
-    "url": "lessonn"
-  },
-  {
-    "type": "Entertainment",
-    "title": "Champignon!",
-    "tagline": "Let's cook!",
-    "description": "An RPG game designed using RPG Maker MV.",
-    "img_source": "images/project_new.png",
-    "img_alt": "New project",
-    "color": "aqua",
-    "dates": "2016-Now",
-    "featured": "no",
-    "documents" : [ ],
-    "url": "champignon"
   }
 ]
