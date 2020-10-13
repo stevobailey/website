@@ -136,22 +136,24 @@ function loadPublications(pubSort) {
 }
 
 function loadAbout() {
-    text = "<img src=\"images/stevo.jpg\" alt=\"Stevo\" class=\"stevo-image\" />" +
+    text = "<img src=\"images/stevo.jpeg\" alt=\"Stevo\" class=\"stevo-image\" />" +
             "<p class=\"minor-heading\">Hello! I'm Stevo!</p>" + 
-            "<p class=\"tagline\">January 18, 2018</p>" +
-            "<p class=\"mod descr\"> I'm a sixth-year PhD graduate student at the University of Californa, Berkeley. I'm in the Electrical Engineering and Computer Science (EECS) department, " +
+            "<p class=\"tagline\">March 21, 2019</p>" +
+            "<p class=\"mod descr\"> I'm a digital ASIC designer living in the San Francisco Bay Area. I received my PhD from UC Berkeley in 2018 while " +
             "researching under Professor <a href=\"https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html\">Bora Nikolic</a>.</p>" +
             "<p class=\"mod descr\"><strong>Resume:</strong> <a href=\"documents/stevo_bailey_resume.pdf\">PDF</a> (updated January 2018)<br>" + 
             "<strong>Curriculum Vitae:</strong> <a href=\"documents/stevo_bailey_cv.pdf\">PDF</a> (updated January 2018)<br>" + 
-            "<strong>Status:</strong> I'm in Berkeley Spring 2018.<br><strong>Availability:</strong> I'm actively looking for a job! I hope to start in May.</p>" +
+            "<strong>Status:</strong> I'm gainfully employed.<br>" +
+            "<strong>Availability:</strong> Busy as a bee!</p>" +
             "<p class=\"mod descr\">Here, have some links!</p>" +
             "<p class=\"supp\"><ul><li><a href=\"http://www.space.com\">Space.com</a> - space-related news site</li>" +
             "<li><a href=\"http://nextbigfuture.com/\">Next Big Future</a> - news about awesome, futuristic science and technology</li>" +
             "<li><a href=\"http://www.ucolick.org/SaveLick/index.html\">Save Lick Observatory</a> - help save a financially ailing research telescope!</li>" +
             "<li><a href=\"http://www.jpl.nasa.gov\">NASA Jet Propulsion Laboratory</a> - satellites and rovers for scientific research</li>" + 
             "<li><a href=\"http://www.nvidia.com\">Nvidia</a> - graphics cards and other gaming essentials</li>" + 
-            "<li><a href=\"http://bwrcs.eecs.berkeley.edu/comic/\">ComIC</a> - integrated circuits design group at UC Berkeley that I'm in</li>" +
-            "<li><a href=\"https://ewb.berkeley.edu/\">Berkeley EWB</a> - Engineers Without Borders, engineering for service</li></ul></p>"
+            "<li><a href=\"http://bwrcs.eecs.berkeley.edu/comic/\">ComIC</a> - integrated circuits design group at UC Berkeley that I was in</li>" +
+            "<li><a href=\"https://ewb.berkeley.edu/\">Berkeley EWB</a> - Engineers Without Borders, engineering for service</li>" +
+            "<li><a href=\"https://www.linkedin.com/in/stevo-bailey-3964b649/\">LinkedIn</a> - my LinkedIn profile</li></ul></p>"
 
     setBoxData("Home", text, "blue", null, null);
 
@@ -161,9 +163,9 @@ function loadAbout() {
             "He also researched fault-tolerant, reconfigurable adder designs for future nanoelectronic systems at UVA under Professor Mircea Stan. " +
             "In 2012 he joined the Berkeley Wireless Research Center at the University of California, Berkeley. He obtained his M.S. in Electrical Engineering " +
             "and Computer Science from Berkeley in 2014. He held internships at the NASA Jet Propulsion Laboratory in 2014 and Nvidia Corporation in 2015. " +
-            "He is currently pursuing a Ph.D. at Berkeley.</p><p>His research interests include robust and power-efficient processor and ASIC design. " +
-            "He is now finishing up his Ph.D on rapid ASIC design methodologies. Outside of academia, he takes <a href=\"http://www.mansfieldmusic.com/\">piano lessons</a>, " +
-            "exercises at the <a href=\"http://recsports.berkeley.edu/\">RSF (gym)</a>, and runs regularly.</p>";
+            "He received his Ph.D. degree in Electrical Engineering and Computer Science (EECS) from Berkeley in 2018.</p><p>His interests include robust and power-efficient signal processor ASIC design. " +
+            "He is currently working at a secret startup that is still in stealth mode. " +
+            "Outside of work, he exercises and runs regularly, plays video games, crochets, attempts to play the piano, and reads science fiction and fantasy novels.</p>";
     
     setBoxData("About", text, "gray", null, null);
     loadNewBoxes();
